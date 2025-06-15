@@ -2,105 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Velhaus Strategies</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velhaus</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <img src="logo.png" alt="Velhaus Logo" class="logo" />
-      <ul>
-        <li><a href="#in-focus">In Focus</a></li>
-        <li><a href="#concepts">Concepts</a></li>
-        <li><a href="#threads">Open Threads</a></li>
-        <li><a href="#case-studies">Case Studies</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1 class="fade-in">Velhaus</h1>
-      <p class="fade-in">A house of ideas, built to launch.</p>
-    </div>
+    <img src="velhaus_logo.png" alt="Velhaus Logo" id="logo"/>
   </header>
-
-  <section id="in-focus" class="projects">
-    <h2>In Focus</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="placeholder.jpg" alt="JustPrep" />
-        <h3>JustPrep</h3>
-        <p>Formula pod system cooled with PCM.</p>
-      </div>
-      <div class="card">
-        <img src="placeholder.jpg" alt="QiSpot" />
-        <h3>QiSpot</h3>
-        <p>Wireless charging mat that works anywhere.</p>
-      </div>
-      <div class="card">
-        <img src="placeholder.jpg" alt="Modular Onesie" />
-        <h3>Modular Onesie</h3>
-        <p>Adaptive modular clothing system for SEN and comfort.</p>
-      </div>
+  <main>
+    <section class="hero">
+      <div class="animated-bg"></div>
+      <h1>Velhaus is a house of ideas</h1>
+      <p>Think tank meets build lab.</p>
+    </section>
+    <section class="projects-grid">
+      <div class="project-tile" data-project="rackform">Rackform</div>
+      <div class="project-tile" data-project="justprep">JustPrep</div>
+      <div class="project-tile" data-project="clay">Clay & Calm</div>
+      <div class="project-tile" data-project="snoft">Snoft</div>
+      <div class="project-tile" data-project="zipd">Zip’d</div>
+    </section>
+    <div class="overlay hidden" id="projectOverlay">
+      <button id="closeOverlay">×</button>
+      <div class="overlay-content">Project details go here...</div>
     </div>
-  </section>
-
-  <section id="concepts" class="projects">
-    <h2>Concepts</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="placeholder.jpg" alt="Clay and Calm" />
-        <h3>Clay and Calm</h3>
-        <p>Boho-Med Etsy store for printable wall art.</p>
-      </div>
-      <div class="card">
-        <img src="placeholder.jpg" alt="McDegen" />
-        <h3>McDegen Ghost Kitchen</h3>
-        <p>NFT-inspired delivery brand for ape lovers.</p>
-      </div>
-      <div class="card">
-        <img src="placeholder.jpg" alt="Build-o" />
-        <h3>Build-o</h3>
-        <p>A modular dildo system for customization fun.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="threads" class="projects">
-    <h2>Open Threads</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="placeholder.jpg" alt="Secure Bottle" />
-        <h3>Secure Non-Spill Bottle</h3>
-        <p>Designed for SEN users with stress-reducing features.</p>
-      </div>
-      <div class="card">
-        <img src="placeholder.jpg" alt="Whippet Heating Core" />
-        <h3>Whippet Heating Core</h3>
-        <p>Sleek, fire-safe PCM heating pad inspired by Daphne.</p>
-      </div>
-      <div class="card">
-        <img src="placeholder.jpg" alt="CDM Site Kit" />
-        <h3>CDM Site Setup Kit</h3>
-        <p>One-click principal contractor compliance starter kit.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="case-studies" class="projects">
-    <h2>Case Studies</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="placeholder.jpg" alt="Elevate Lifestyle Academy" />
-        <h3>Elevate Lifestyle Academy</h3>
-        <p>eBay dropshipping mentorship with Discord infrastructure.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© Velhaus Strategies. All rights reserved.</p>
-  </footer>
-
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

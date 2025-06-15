@@ -1,12 +1,10 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
-  cards.forEach((card, i) => {
-    card.style.opacity = 0;
-    card.style.transform = "translateY(20px)";
-    setTimeout(() => {
-      card.style.transition = "all 0.6s ease";
-      card.style.opacity = 1;
-      card.style.transform = "translateY(0)";
-    }, i * 150);
+document.querySelectorAll('.project-tile').forEach(tile => {
+  tile.addEventListener('click', () => {
+    const overlay = document.getElementById('projectOverlay');
+    overlay.classList.remove('hidden');
+    overlay.querySelector('.overlay-content').innerText = `${tile.innerText} is loading...`;
   });
+});
+document.getElementById('closeOverlay').addEventListener('click', () => {
+  document.getElementById('projectOverlay').classList.add('hidden');
 });
